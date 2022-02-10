@@ -1,8 +1,8 @@
-FUNC_NAMES	= _func.txt
+FUNC_NAMES	= _func.c
 SRCS		= $(shell cat ${FUNC_NAMES} | grep "^[^/]")
 OBJS		= ${SRCS:.c=.o}
 
-BONUS_NAMES	= _bonus.txt
+BONUS_NAMES	= _bonus.c
 SRCS_BONUS	= $(shell cat ${BONUS_NAMES} | grep "^[^/]")
 OBJS_BONUS	= ${SRCS_BONUS:.c=.o}
 

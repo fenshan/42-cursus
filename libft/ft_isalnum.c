@@ -6,13 +6,13 @@
 /*   By: fnicolas <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/07 22:25:52 by fnicolas          #+#    #+#             */
-/*   Updated: 2022/02/07 22:28:33 by fnicolas         ###   ########.fr       */
+/*   Updated: 2022/02/09 22:56:13 by fnicolas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_isalnum(int c)
 {
-	//TODO se puede llamar a isalpha e isdigit?
-	return ((c >= 'a' && c <= 'z')
-		|| (c >= 'A' && c <= 'Z'));
+	return (ft_isalpha(c) || ft_isdigit(c));
 }
