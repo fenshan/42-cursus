@@ -8,36 +8,45 @@ OBJS_BONUS	= ${SRCS_BONUS:.c=.o}
 
 NAME		= libft.a
 
-CC			= cc
+CC		= cc
 
-AR			= ar rcs
+AR		= ar rcs
 
-RM			= rm -f
+RM		= rm -f
 
 CFLAGS		= -Wall -Wextra -Werror
 
-# TODO
-# dont relink libft.a when it doesnt have bonus
-# relink if it has them
+# COLORS
+BLACK		= \033[0;30m
+RED		= \033[0;31m
+GREEN		= \033[0;32m
+YELLOW		= \033[0;33m
+BLUE		= \033[0;34m
+MAGENTA		= \033[0;35m
+CYAN		= \033[0;36m
+RESET		= \033[0m
+
 ${NAME}:	${OBJS}
-			${AR} ${NAME} ${OBJS}
-			@echo "libft.a finished!"
+		${AR} ${NAME} ${OBJS}
+ifeq "" "$(findstring ${OBJS_BONUS},${OBJS})"
+		@echo "${GREEN}$@ finished!${RESET}"
+else
+		@echo "${GREEN}$@ bonus finished!${RESET}"
+endif
 
 all:		${NAME}
 
-# TODO
-# dont relink libft.a when it has bonus
-# relink if it doesnt have them
-bonus:		${OBJS} ${OBJS_BONUS}
-			${AR} ${NAME} ${OBJS} ${OBJS_BONUS}
-			@echo "libft.a bonus finished!"
+bonus:		${OBJS_BONUS}
+		@make OBJS="${OBJS} ${OBJS_BONUS}" all
 
 clean:
-			${RM} ${OBJS} ${OBJS_BONUS}
+		${RM} ${OBJS} ${OBJS_BONUS}
+		@echo "${YELLOW}objects cleaned${RESET}"
 
 fclean:		clean
-			${RM} ${NAME}
+		${RM} ${NAME}
+		@echo "${YELLOW}all binary cleaned${RESET}"
 
-re:			fclean all
+re:		fclean all
 
 .PHONY:		all bonus clean fclean re
