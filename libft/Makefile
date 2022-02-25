@@ -36,7 +36,7 @@ endif
 
 all:		${NAME}
 
-bonus:		${OBJS_BONUS}
+bonus:
 		@make OBJS="${OBJS} ${OBJS_BONUS}" all
 
 clean:
@@ -45,7 +45,7 @@ clean:
 
 fclean:		clean
 		${RM} ${NAME}
-		@echo "${YELLOW}all binary cleaned${RESET}"
+		@echo "${YELLOW}all binaries cleaned${RESET}"
 
 re:		fclean all
 
