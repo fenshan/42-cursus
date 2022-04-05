@@ -25,7 +25,7 @@ My solutions to 42madrid cursus projects (I only upload the OK-graded projects)
 
 <br>
 
-* [libft](https://github.com/fenshan/42-cursus/tree/main/libft) | [project subject](https://github.com/fenshan/42-cursus/blob/main/libft/libft.pdf)
-* [born2beroot](https://github.com/fenshan/42-cursus/tree/main/born2beroot) | [project subject](https://github.com/fenshan/42-cursus/blob/main/born2beroot/born2beroot.pdf)
-* [get_next_line](https://github.com/fenshan/42-cursus/tree/main/get_next_line) | [project subject](https://github.com/fenshan/42-cursus/blob/main/get_next_line/get_next_line.pdf)
-* [ft_printf](https://github.com/fenshan/42-cursus/tree/main/ft_printf) | [project subject](https://github.com/fenshan/42-cursus/blob/main/ft_printf/ft_printf.pdf)
+* 1 [libft](https://github.com/fenshan/42-cursus/tree/main/libft) | [project subject](https://github.com/fenshan/42-cursus/blob/main/libft/libft.pdf)
+* 2 [born2beroot](https://github.com/fenshan/42-cursus/tree/main/born2beroot) | [project subject](https://github.com/fenshan/42-cursus/blob/main/born2beroot/born2beroot.pdf)
+* 2 [get_next_line](https://github.com/fenshan/42-cursus/tree/main/get_next_line) | [project subject](https://github.com/fenshan/42-cursus/blob/main/get_next_line/get_next_line.pdf)
+* 2 [ft_printf](https://github.com/fenshan/42-cursus/tree/main/ft_printf) | [project subject](https://github.com/fenshan/42-cursus/blob/main/ft_printf/ft_printf.pdf)
